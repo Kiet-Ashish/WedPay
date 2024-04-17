@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShaadiHai - Coming Soon</title>
+
+    <link rel="icon" href="wedpay-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ff5e78;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666666;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .subscribe-form {
+            margin-top: 30px;
+        }
+        .subscribe-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-bottom: 2px solid #ff5e78;
+            background-color: #f7f7f7;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            outline: none;
+        }
+        .subscribe-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff5e78;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .subscribe-button:hover {
+            background-color: #d33a51;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #666666;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ff5e78;
+        }
+        footer {
+            margin-top: 50px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ShaadiHai</h1>
+        <p>Love is in the air...</p>
+        <p>We're getting ready to spread the love!</p>
+        <p>Stay tuned for the grand unveiling of ShaadiHai - your ultimate destination for all things love and matrimony.</p>
+        <div class="subscribe-form">
+            <input type="email" class="subscribe-input" placeholder="Enter your email">
+            <button class="subscribe-button" onclick="subscribe()">Subscribe</button>
+        </div>
+        <div class="social-icons">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 ShaadiHai. All rights reserved.</p>
+    </footer>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HVXQ9SWBP"></script>
+    <script>
+        function subscribe() {
+            var email = document.getElementById('email').value;
+            // Send event to Google Analytics
+            gtag('event', 'subscribe', {
+                'event_category': 'Engagement',
+                'event_label': 'User subscribed with email: ' + email
+            });
+            // You can add your own logic here to handle the subscription, for example, sending the email to your server for subscription handling.
+            // For demonstration purposes, let's just log the email to the console.
+            console.log('Subscribed email:', email);
+            // After processing, you can redirect the user to the comingsoon.html page or display a success message.
+        }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HVXQ9SWBP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2HVXQ9SWBP');
+    </script>
+</body>
+</html>

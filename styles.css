@@ -8,7 +8,9 @@ h1,h2,h3,h4,h5,h6{
   font-size: 2.25rem;
   line-height: 1.5;
 }
-
+#blur-text {
+  filter: blur(10px); /* Change the blur amount as needed */
+}
 /* heading */
 .big-heading{
   font-weight: 900;
